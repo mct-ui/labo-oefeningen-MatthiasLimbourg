@@ -2,6 +2,24 @@
   #FONTS
 \*------------------------------------*/
 
+@font-face {
+    font-family:"ClearSans";
+    font-weight: 200;
+    src:url("../fonts/ClearSans-Light-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family:"ClearSans";
+    font-weight: 400;
+    src:url("../fonts/ClearSans-Regular-webfont.woff") format("woff");
+}
+
+@font-face {
+    font-family:"ClearSans";
+    font-weight: 600;
+    src:url("../fonts/ClearSans-Medium-webfont.woff") format("woff");
+}
+
 /*------------------------------------*\
   #GENERIC
 \*------------------------------------*/
@@ -13,12 +31,16 @@
 */
 
 html {
-    font-size: 16px;
-    line-height: 24px;
-    font-family: Helvetica, arial, sans-serif;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 200;
+    color: white;
+    font-family: "ClearSans",Helvetica, arial, sans-serif;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-image: linear-gradient(to bottom right,#0A257D, #061649);
+    background-attachment: fixed;
 }
 
 *,
@@ -152,7 +174,10 @@ a {
 
 a:visited,
 a:active,
-a:hover,
+a:hover{
+    color: #DBEDFF;
+    text-shadow: 0 0 10px #fff, 0 0 20px #DBEDFF, 0 0 30px #DBEDFF;
+}
 a:focus {
     color: #8EC7FF;
 }
@@ -178,6 +203,8 @@ a:focus {
 .o-row--lg {
     padding: 48px 24px 24px;
 }
+
+
 
 @media (min-width: 768px) {
     .o-row {
@@ -205,7 +232,7 @@ a:focus {
 .o-container {
     margin-left: auto;
     margin-right: auto;
-    max-width: 56.4em; /* 56.4 * 20px = 1128px */
+    max-width: 71; /* 71 * 18px = 1278px */
 }
 
 /*
@@ -366,6 +393,19 @@ a:focus {
 /*------------------------------------*\
   #COMPONENTS
 \*------------------------------------*/
+
+.c-logo {
+    height: 32px;
+}
+
+.c-links {
+    color: white !important;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
 
 /*------------------------------------*\
   #UTILITIES
