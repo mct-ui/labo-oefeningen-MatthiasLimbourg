@@ -394,6 +394,81 @@ a:focus {
   #COMPONENTS
 \*------------------------------------*/
 
+/*
+    Component: header
+    ---
+    Main header of the website
+*/
+@media (min-width: 768px) {
+    .c-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+/*
+Component logo
+*/
+.c-logo {
+    height: 32px;
+}
+
+.c-logo__symbol {
+    height: 100%;
+}
+
+/*
+    Component: Nav
+    ---
+    Main navigation of the site
+*/
+.c-nav {
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.c-nav__link {
+    text-decoration: none;
+    font-weight: 600;
+    display: block;
+    padding: 8px 0;
+}
+
+.c-nav__link,
+.c-nav__link:visited,
+.c-nav__link:active {
+    color: white;
+}
+
+.c-nav__link:hover,
+.c-nav__link:focus {
+    color: #DBEDFF;
+    text-shadow: 0 0 3px #fff;
+}
+
+@media (min-width: 768px) {
+    .c-nav__list {
+        display: flex;
+        align-items: center;
+    }
+
+    .c-nav__link {
+        padding: 8px 16px;
+    }
+}
+
+/*
+    Component: width
+*/
+.c-width {
+    max-width: 32em;
+}
+
+
 .c-logo {
     height: 32px;
 }
@@ -403,8 +478,48 @@ a:focus {
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 1px;
+    padding-right: 6px;
 }
 
+.c-button {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-image: linear-gradient(to right, #0053FB 0%, #033AA7 51%, #0053FB 100%);
+    padding: 16px 30px;
+    transition: 0.5s;
+    background-size: 200% auto;
+    box-shadow: 0px 0px 10px 0px rgba(17,149,255,0.3);
+
+}
+
+.c-button:hover {
+  background-position: right center;
+  color: inherit; /* change the direction of the change here */
+}
+
+
+.c-figure{
+    position: relative;
+}
+
+.c-figure__desc{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    margin-top: 0px;
+    padding: 12px 12px 12px 20px;
+    max-width: 232px;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 400;
+    color: #231F20;
+    border-right: 5px solid #5051DB;
+    background-color: white;
+}
 
 
 /*------------------------------------*\
